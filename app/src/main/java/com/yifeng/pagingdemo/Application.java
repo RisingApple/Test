@@ -61,4 +61,13 @@ public class Application extends android.app.Application {
             }
         });
     }
+
+
+    private void test() {
+        Log.i("TAG", "this is test branch");
+    }
+
+    private void test2() {
+        Log.i("TAG", "this is master branch");
+    }
 }
