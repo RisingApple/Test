@@ -3,6 +3,7 @@ package com.yifeng.pagingdemo;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,7 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
         INSTANCE = this;
+        Log.i("TAG", "TEST");
 
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
