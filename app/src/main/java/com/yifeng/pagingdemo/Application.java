@@ -14,6 +14,7 @@ public class Application extends android.app.Application {
 
 
     public static Context getContext() {
+        
         return INSTANCE;
     }
 
