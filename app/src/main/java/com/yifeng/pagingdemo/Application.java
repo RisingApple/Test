@@ -22,6 +22,7 @@ public class Application extends android.app.Application {
         super.onCreate();
         INSTANCE = this;
         Log.i("TAG", "TEST");
+        Log.i("MASTER", "MASTER");
 
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
