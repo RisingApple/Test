@@ -22,7 +22,9 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
         INSTANCE = this;
+        Log.i("TEST", "testBranch");
         Log.i("TAG", "TEST");
+        Log.i("MASTER", "MASTER");
 
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
@@ -60,5 +62,14 @@ public class Application extends android.app.Application {
 
             }
         });
+    }
+
+
+    private void test() {
+        Log.i("TAG", "this is test branch");
+    }
+
+    private void test2() {
+        Log.i("TAG", "this is master branch");
     }
 }
